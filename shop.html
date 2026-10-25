@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AzureBay Shop 🌊</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="main-title">🌊 AzureBay Seafood Market 🦈✨<br><span>Fresh From Ocean To Your Kitchen 💙</span></h1>
+
+<div class="products">
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500" alt="Fish" onerror="this.src='https://via.placeholder.com/280x200/667eea/ffffff?text=🐟+Fish+Curry'">
+        </div>
+        <h3>🐟 Fish Curry Bliss</h3>
+        <p class="price">💰 Rs 250/- <span>🔥 Best Seller</span></p>
+        <button onclick="addToCart('Fish Curry',250)">🛒 Add to Cart ✨</button>
+    </div>
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=500" alt="Prawn" onerror="this.src='https://via.placeholder.com/280x200/764ba2/ffffff?text=🦐+Prawn+Fry'">
+        </div>
+        <h3>🦐 Prawn Fry Magic</h3>
+        <p class="price">💰 Rs 350/- <span>⭐ Premium</span></p>
+        <button onclick="addToCart('Prawn Fry',350)">🛒 Add to Cart ✨</button>
+    </div>
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=500" alt="Crab" onerror="this.src='https://via.placeholder.com/280x200/00b09b/ffffff?text=🦀+Crab+Masala'">
+        </div>
+        <h3>🦀 Crab Masala Special</h3>
+        <p class="price">💰 Rs 300/- <span>💎 Fresh</span></p>
+        <button onclick="addToCart('Crab Masala',300)">🛒 Add to Cart ✨</button>
+    </div>
+</div>
+
+<div class="cart-bottom">
+    <h3 id="cartText">🛒 Your Cart (0) — Total: Rs 0 💸</h3>
+    <div id="cartItems">✨ Your cart is empty — Add some yummy seafood! 🦐</div>
+    <button onclick="payNow()" class="pay-btn">💳 Pay Now & Enjoy 🎉</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
