@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const querystring = require('querystring');
 
-// 💾 Simple memory database for users - ✨ Aesthetic wala storage
+// 💾 Simple memory database for users
 let users = [];
 
 const server = http.createServer((req, res) => {
@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // 📁 SERVE FILES - Aesthetic File Server 🌊
+    // 📁 SERVE FILES  🌊
     let file = req.url === '/' ? '/register.html' : req.url;
     let filePath = path.join(__dirname, file);
     let ext = path.extname(filePath);
