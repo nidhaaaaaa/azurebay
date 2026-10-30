@@ -1,15 +1,15 @@
 let cart = [];
 let total = 0;
 
-// 🛒 Add to Cart Function - with cute toast
+// 🛒 Add to Cart Function 
 function addToCart(name, price){
     cart.push({name, price});
     total += price;
     
-    // ✨ Update Cart Text
+    // ✨ 
     document.getElementById('cartText').innerText = `🛒 Your Cart (${cart.length}) — Total: Rs ${total} 💸`;
     
-    // 💫 Add Item with Animation
+    // 💫 Add Item 
     let itemsDiv = document.getElementById('cartItems');
     if(cart.length === 1) itemsDiv.innerHTML = ""; // Clear empty message
     
@@ -29,7 +29,7 @@ function payNow(){
         return;
     }
     
-    // 🎊 Success Message - Aesthetic
+    // 🎊 Success Message 
     alert(`🎉 Payment Successful! 💳\n\n💰 Total Paid: Rs ${total}/-\n🛒 Items: ${cart.length}\n\nThank you for shopping at 🌊 AzureBay Seafood! 🦈💙\nYour order will be delivered fresh! ✨🚚`);
     
     // 🔄 Reset Cart
@@ -39,7 +39,7 @@ function payNow(){
     document.getElementById('cartItems').innerHTML = `✨ Your cart is empty — Add some yummy seafood! 🦐💙`;
 }
 
-// 🍞 Toast Notification - Aesthetic
+// 🍞 Toast Notification - 
 function showToast(msg, isError = false){
     let toast = document.createElement('div');
     toast.innerText = msg;
@@ -63,7 +63,7 @@ function showToast(msg, isError = false){
     setTimeout(()=> toast.remove(), 2500);
 }
 
-// 💅 Add keyframes for animation
+// 💅 
 const style = document.createElement('style');
 style.innerHTML = `
 @keyframes slideIn{
